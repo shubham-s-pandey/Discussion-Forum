@@ -1,2 +1,2 @@
 # Discussion Forum [JAVA Spring framework]
-A simple Description Forum made in Spring.
+A simple Discussion Forum made in Spring.
