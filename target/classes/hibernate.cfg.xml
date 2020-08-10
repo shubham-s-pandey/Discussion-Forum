@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC  
+        "-//Hibernate/Hibernate Configuration DTD 5.3//EN"  
+        "http://www.hibernate.org/dtd/hibernate-configuration-5.3.dtd">  
+<hibernate-configuration>  
+    <session-factory>  
+            
+    <property name="hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="dialect">org.hibernate.dialect.MariaDBDialect</property>
+        <property name="connection.url">jdbc:mariadb://localhost/tcet</property>
+        <property name="connection.username">root</property>    
+        <property name="connection.password">root</property>
+        <property name="connection.driver_class">org.mariadb.jdbc.Driver</property>   
+       
+<!--        <mapping class="com.tcet.tc_hibernate.Employee"/>  -->
+<!--        <mapping class="com.tcet.tc_hibernate.ContractEmployee"/>  -->
+<!--        <mapping class="com.tcet.tc_hibernate.RegularEmployee"/>  -->
+<!--        <mapping class="com.tcet.tc_hibernate.Question"/>-->
+<!--        <mapping class="com.tcet.tc_hibernate.Answer"/>-->
+<!--        <mapping class="com.tcet.tc_hibernate.Topic"/>-->
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property>
+        <property name="hibernate.c3p0.acquire_increment">2</property>
+        <property name="hibernate.c3p0.acquire_increment">1800</property>
+        <property name="hibernate.c3p0.max_statements">150</property>
+    </session-factory>
+</hibernate-configuration> 
